@@ -1,0 +1,516 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>com.apple.alfred.workflow.defaultapp</string>
+	<key>category</key>
+	<string>Tools</string>
+	<key>connections</key>
+	<dict>
+		<key>15D8CD75-A1F2-4A66-A640-66DF52429DC9</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>31295F04-FB2E-49E8-B897-6C43F8B6A5B9</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>2AF9BA69-5FF8-4BC4-B793-87817A1D2F75</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>8A92A374-968F-4B02-A028-B59AB3D90C7C</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>31295F04-FB2E-49E8-B897-6C43F8B6A5B9</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>E67B33A1-F292-46D5-B2EF-1C7C26C17094</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>5E1FFA0C-8BFA-4951-B019-227BC600CA59</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>15D8CD75-A1F2-4A66-A640-66DF52429DC9</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>71E4B0EC-CB1F-45AD-999A-5C41F93244DF</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>9BE1062E-909F-4739-BB3E-B533A9061BB9</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>75943391-AB2E-4286-A96B-4917B58D57AA</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>71E4B0EC-CB1F-45AD-999A-5C41F93244DF</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>8A92A374-968F-4B02-A028-B59AB3D90C7C</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>75943391-AB2E-4286-A96B-4917B58D57AA</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>A5A9F50F-F445-4D3A-B070-067E88CC9D88</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>2D608F37-414F-41EF-B397-5A16DD6500D1</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>E67B33A1-F292-46D5-B2EF-1C7C26C17094</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>FE892B16-A265-46DB-ABBD-3C6919E594BB</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>A5A9F50F-F445-4D3A-B070-067E88CC9D88</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>FE892B16-A265-46DB-ABBD-3C6919E594BB</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>2AF9BA69-5FF8-4BC4-B793-87817A1D2F75</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>Acidham</string>
+	<key>description</key>
+	<string>Change default app for a filetype</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>Default App</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>on run argv	set theQuery to item 1 of argv	set query to StringSplit(theQuery, "|")	set theApp to item 1 of query	set ext to item 2 of query	if ext does not start with "." then		set ext to "." &amp; ext	end if		set appID to getAppID(theApp)	if appID is not equal to "ERROR" then		do shell script "/usr/local/bin/duti -s " &amp; appID &amp; " ." &amp; ext &amp; " all"		return ext &amp; " assigned to " &amp; theApp	else		return theApp &amp; " was not found!"	end ifend runon getAppID(theApp)	try		tell application "System Events"			set theCmd to "osascript -e 'id of app \"" &amp; theApp &amp; "\"'"			set appID to do shell script theCmd			return appID		end tell	on error		return "ERROR"	end try	end getAppID(* ================================================================
+FUNTION: Splits a String with a given delimiter
+RETURNS: List of String  (List)
+==================================================================*)on StringSplit(theString, theDelimiter)	-- save delimiters to restore old settings	set oldDelimiters to AppleScript's text item delimiters	-- set delimiters to delimiter to be used	set AppleScript's text item delimiters to theDelimiter	-- create the array	set theArray to every text item of theString	-- restore the old setting	set AppleScript's text item delimiters to oldDelimiters	-- return the result	return theArrayend StringSplit</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>6</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>71E4B0EC-CB1F-45AD-999A-5C41F93244DF</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>68</integer>
+				<key>script</key>
+				<string>on run argv	set extension to item 1 of argv
+	if extension does not start with "." then		set extension to "." &amp; extension
+	end if	try		set resp to do shell script "/usr/local/bin/duti -x " &amp; extension	on error		set resp to "ERROR"	end try	if resp is not equal to "ERROR" then
+		set txt to "\"" &amp; extension &amp; "\" opens with:\n" &amp; resp		display dialog txt buttons {"Don't Continue", "Continue"} default button "Continue"		set action to button returned of result	else		set action to "Don't Continue"	end if	if action is equal to "Don't Continue" then		return "QUIT"	else		return extension	end ifend run</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>type</key>
+				<integer>6</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>31295F04-FB2E-49E8-B897-6C43F8B6A5B9</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<true/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string>{query}</string>
+				<key>title</key>
+				<string>Change Open With</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>9BE1062E-909F-4739-BB3E-B533A9061BB9</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>keyword</key>
+				<string>dapp</string>
+				<key>subtext</key>
+				<string>Enter extension that needs to be reassigned</string>
+				<key>text</key>
+				<string>Which extension would you like to change?</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>5E1FFA0C-8BFA-4951-B019-227BC600CA59</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>keyword</key>
+				<string>*app</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>script</key>
+				<string></string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string>apps.py</string>
+				<key>subtext</key>
+				<string>Enter name of the App without .app</string>
+				<key>title</key>
+				<string>Enter App to open "{var:ext}"</string>
+				<key>type</key>
+				<integer>8</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>8A92A374-968F-4B02-A028-B59AB3D90C7C</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.transform</string>
+			<key>uid</key>
+			<string>E67B33A1-F292-46D5-B2EF-1C7C26C17094</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string>{query}|{var:ext}</string>
+				<key>variables</key>
+				<dict/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>75943391-AB2E-4286-A96B-4917B58D57AA</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.transform</string>
+			<key>uid</key>
+			<string>15D8CD75-A1F2-4A66-A640-66DF52429DC9</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string></string>
+				<key>variables</key>
+				<dict>
+					<key>ext</key>
+					<string>{query}</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>2AF9BA69-5FF8-4BC4-B793-87817A1D2F75</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>inputstring</key>
+				<string>{query}</string>
+				<key>matchcasesensitive</key>
+				<true/>
+				<key>matchmode</key>
+				<integer>1</integer>
+				<key>matchstring</key>
+				<string>QUIT</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.filter</string>
+			<key>uid</key>
+			<string>FE892B16-A265-46DB-ABBD-3C6919E594BB</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string>Nothing changed!</string>
+				<key>title</key>
+				<string>Canceled</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>2D608F37-414F-41EF-B397-5A16DD6500D1</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>inputstring</key>
+				<string>{query}</string>
+				<key>matchcasesensitive</key>
+				<true/>
+				<key>matchmode</key>
+				<integer>0</integer>
+				<key>matchstring</key>
+				<string>QUIT</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.filter</string>
+			<key>uid</key>
+			<string>A5A9F50F-F445-4D3A-B070-067E88CC9D88</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string></string>
+	<key>uidata</key>
+	<dict>
+		<key>15D8CD75-A1F2-4A66-A640-66DF52429DC9</key>
+		<dict>
+			<key>xpos</key>
+			<integer>170</integer>
+			<key>ypos</key>
+			<integer>270</integer>
+		</dict>
+		<key>2AF9BA69-5FF8-4BC4-B793-87817A1D2F75</key>
+		<dict>
+			<key>xpos</key>
+			<integer>550</integer>
+			<key>ypos</key>
+			<integer>270</integer>
+		</dict>
+		<key>2D608F37-414F-41EF-B397-5A16DD6500D1</key>
+		<dict>
+			<key>xpos</key>
+			<integer>1030</integer>
+			<key>ypos</key>
+			<integer>380</integer>
+		</dict>
+		<key>31295F04-FB2E-49E8-B897-6C43F8B6A5B9</key>
+		<dict>
+			<key>xpos</key>
+			<integer>240</integer>
+			<key>ypos</key>
+			<integer>240</integer>
+		</dict>
+		<key>5E1FFA0C-8BFA-4951-B019-227BC600CA59</key>
+		<dict>
+			<key>xpos</key>
+			<integer>20</integer>
+			<key>ypos</key>
+			<integer>240</integer>
+		</dict>
+		<key>71E4B0EC-CB1F-45AD-999A-5C41F93244DF</key>
+		<dict>
+			<key>xpos</key>
+			<integer>870</integer>
+			<key>ypos</key>
+			<integer>240</integer>
+		</dict>
+		<key>75943391-AB2E-4286-A96B-4917B58D57AA</key>
+		<dict>
+			<key>xpos</key>
+			<integer>790</integer>
+			<key>ypos</key>
+			<integer>270</integer>
+		</dict>
+		<key>8A92A374-968F-4B02-A028-B59AB3D90C7C</key>
+		<dict>
+			<key>xpos</key>
+			<integer>630</integer>
+			<key>ypos</key>
+			<integer>240</integer>
+		</dict>
+		<key>9BE1062E-909F-4739-BB3E-B533A9061BB9</key>
+		<dict>
+			<key>xpos</key>
+			<integer>1030</integer>
+			<key>ypos</key>
+			<integer>240</integer>
+		</dict>
+		<key>A5A9F50F-F445-4D3A-B070-067E88CC9D88</key>
+		<dict>
+			<key>xpos</key>
+			<integer>480</integer>
+			<key>ypos</key>
+			<integer>410</integer>
+		</dict>
+		<key>E67B33A1-F292-46D5-B2EF-1C7C26C17094</key>
+		<dict>
+			<key>xpos</key>
+			<integer>390</integer>
+			<key>ypos</key>
+			<integer>270</integer>
+		</dict>
+		<key>FE892B16-A265-46DB-ABBD-3C6919E594BB</key>
+		<dict>
+			<key>xpos</key>
+			<integer>480</integer>
+			<key>ypos</key>
+			<integer>270</integer>
+		</dict>
+	</dict>
+	<key>version</key>
+	<string>0.7</string>
+	<key>webaddress</key>
+	<string>https://github.com/Acidham/alfred-default-app</string>
+</dict>
+</plist>

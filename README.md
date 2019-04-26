@@ -1,4 +1,4 @@
-# Default App for filetpy (Alfred)
+# Default App for filetype (Alfred)
 
 **Default App** changes the assigned app for a specific extension.
 

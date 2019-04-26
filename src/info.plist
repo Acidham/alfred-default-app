@@ -167,7 +167,7 @@
 				<key>escaping</key>
 				<integer>68</integer>
 				<key>script</key>
-				<string>on run argv	set theQuery to item 1 of argv	set query to StringSplit(theQuery, "|")	set theApp to item 1 of query	set ext to item 2 of query	if ext does not start with "." then		set ext to "." &amp; ext	end if		set appID to getAppID(theApp)	if appID is not equal to "ERROR" then		do shell script "/usr/local/bin/duti -s " &amp; appID &amp; " ." &amp; ext &amp; " all"		return ext &amp; " assigned to " &amp; theApp	else		return theApp &amp; " was not found!"	end ifend runon getAppID(theApp)	try		tell application "System Events"			set theCmd to "osascript -e 'id of app \"" &amp; theApp &amp; "\"'"			set appID to do shell script theCmd			return appID		end tell	on error		return "ERROR"	end try	end getAppID(* ================================================================
+				<string>on run argv	set theQuery to item 1 of argv	set query to StringSplit(theQuery, "|")	set theApp to item 1 of query	set ext to item 2 of query	if ext does not start with "." then		set ext to "." &amp; ext	end if		set appID to getAppID(theApp)	if appID is not equal to "ERROR" then		do shell script "/usr/local/bin/duti -s " &amp; appID &amp; " " &amp; ext &amp; " all"		return ext &amp; " assigned to " &amp; theApp	else		return theApp &amp; " was not found!"	end ifend runon getAppID(theApp)	try		tell application "System Events"			set theCmd to "osascript -e 'id of app \"" &amp; theApp &amp; "\"'"			set appID to do shell script theCmd			return appID		end tell	on error		return "ERROR"	end try	end getAppID(* ================================================================
 FUNTION: Splits a String with a given delimiter
 RETURNS: List of String  (List)
 ==================================================================*)on StringSplit(theString, theDelimiter)	-- save delimiters to restore old settings	set oldDelimiters to AppleScript's text item delimiters	-- set delimiters to delimiter to be used	set AppleScript's text item delimiters to theDelimiter	-- create the array	set theArray to every text item of theString	-- restore the old setting	set AppleScript's text item delimiters to oldDelimiters	-- return the result	return theArrayend StringSplit</string>
@@ -193,10 +193,7 @@ RETURNS: List of String  (List)
 				<key>escaping</key>
 				<integer>68</integer>
 				<key>script</key>
-				<string>on run argv	set extension to item 1 of argv
-	if extension does not start with "." then		set extension to "." &amp; extension
-	end if	try		set resp to do shell script "/usr/local/bin/duti -x " &amp; extension	on error		set resp to "ERROR"	end try	if resp is not equal to "ERROR" then
-		set txt to "\"" &amp; extension &amp; "\" opens with:\n" &amp; resp		display dialog txt buttons {"Don't Continue", "Continue"} default button "Continue"		set action to button returned of result	else		set action to "Don't Continue"	end if	if action is equal to "Don't Continue" then		return "QUIT"	else		return extension	end ifend run</string>
+				<string>on run argv	set extension to item 1 of argv	if extension does not start with "." then		set extension to "." &amp; extension	end if	try		set resp to do shell script "/usr/local/bin/duti -x " &amp; extension	on error		set resp to "ERROR"	end try	if resp is not equal to "ERROR" then		set txt to "\"" &amp; extension &amp; "\" opens with:\n" &amp; resp		display dialog txt buttons {"Don't Continue", "Continue"} default button "Continue"		set action to button returned of result	else		display dialog "No App assigned for extension \"" &amp; extension &amp; "\"" buttons {"Don't Continue", "Continue"} default button "Continue"		set action to button returned of result	end if	if action is equal to "Don't Continue" then		return "QUIT"	else		return extension	end ifend run</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -509,7 +506,7 @@ RETURNS: List of String  (List)
 		</dict>
 	</dict>
 	<key>version</key>
-	<string>0.7</string>
+	<string>0.8</string>
 	<key>webaddress</key>
 	<string>https://github.com/Acidham/alfred-default-app</string>
 </dict>

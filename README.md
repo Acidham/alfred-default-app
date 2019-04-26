@@ -15,8 +15,8 @@ brew install duti
 
 `dapp` *ext*
 
-1. *ext* you can type any extension, the worfklow will ask for confirmation in case the extension is unknown. 
-2. Choose one of the App to assign the extension to. 
+1. *ext* you can type any extension, the workflow will ask for confirmation to change the assigned app
+2. Choose one of the Apps to assign the extension to. 
 
 ## Screenshots
 

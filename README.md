@@ -1,4 +1,4 @@
-# Default App for filetype (Alfred)
+# Default App for filetype, Alfred 3
 
 **Default App** changes the assigned app for a specific extension.
 

@@ -6,7 +6,7 @@
 
 **Default App** uses [duti](https://github.com/moretension/duti) to change assigned apps. 
 
-You to install duti first before you execute the Alfred Workflow
+You need to install *duti* first before you execute the Alfred Workflow
 
 ````
 brew install duti

@@ -6,6 +6,14 @@ import sys
 
 
 def app_list(q):
+    """ Generates as sorted list of App Names in /Applications folder
+    
+    Arguments:
+        q {string} -- Search String
+    
+    Returns:
+        list -- Sorted list of App Names in /Applications
+    """
     file_list = os.listdir('/Applications')
     sorted_file_list = sorted([os.path.splitext(a)[0] for a in file_list if a.endswith('.app')])
     if q != str():
@@ -14,9 +22,7 @@ def app_list(q):
 
 
 query = Alfred.Tools.getArgv(1)
-
 wf = Alfred.Items()
-
 for app in app_list(query):
     wf.setItem(
         title=app,

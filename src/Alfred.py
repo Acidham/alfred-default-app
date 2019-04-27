@@ -34,19 +34,20 @@ class Items:
         self.mods = {}
 
     def setItem(self, **kwargs):
-        """
-        Add multiple key values to define an item
+        """Add multiple key values to define an item
         :param kwargs: title,subtitle,arg,valid,quicklookurl,uid,automcomplete,type
         """
         for key, value in kwargs.items():
             self.setKv(key, value)
 
     def getItem(self, d_type=""):
-        """
-        get current item definition for validation
-        :param d_type: defines returned data format; "JSON" if readable
-        json is required for debugging purpose
-        :return: readable JSON or JSON data
+        """ Get current item definition for validation
+        
+        Keyword Arguments:
+            d_type {str} -- defines returned data format; "JSON" if readable (default: {""})
+        
+        Returns:
+            dict -- dict or readable JSON or JSON data
         """
         if d_type == "":
             return self.item

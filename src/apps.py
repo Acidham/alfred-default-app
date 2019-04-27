@@ -26,6 +26,7 @@ wf = Alfred.Items()
 for app in app_list(query):
     wf.setItem(
         title=app,
+        subtitle="Continue to assign %s?" % app,
         arg=app
     )
     wf.setIcon('/Applications/' + app + '.app','fileicon')

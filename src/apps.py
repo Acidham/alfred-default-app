@@ -30,4 +30,11 @@ for app in app_list(query):
     )
     wf.setIcon('/Applications/' + app + '.app','fileicon')
     wf.addItem()
+if not app_list(query):
+    wf.setItem(
+        title="Nothing Found!",
+        subtitle='No App found beginning with: "%s"' %query,
+        valid=False
+    )
+    wf.addItem()
 wf.write()

@@ -27,6 +27,3 @@ brew install duti
 ### 2. Step
 
 ![2](img/2.png)
-
-### 3. Step
-![3](img/3.png)

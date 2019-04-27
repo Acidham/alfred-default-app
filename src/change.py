@@ -1,4 +1,5 @@
 #!/usr/bin/python
+
 from Alfred import Tools
 import os
 import sys

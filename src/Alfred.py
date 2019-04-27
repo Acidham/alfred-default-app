@@ -159,7 +159,6 @@ class Tools:
             return sys.argv[i]
         except IndexError:
             return str()
-            pass
 
     @staticmethod
     def getDateStr(float_time, format='%d.%m.%Y'):

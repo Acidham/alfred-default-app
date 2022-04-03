@@ -11,6 +11,8 @@ You need to install *duti* first before you execute the Alfred Workflow
 ````
 brew install duti
 ````
+Requires Python 3
+
 ## Usage
 
 `dapp` *ext*

@@ -1,13 +1,17 @@
-#!/usr/bin/python
+#!/usr/bin/env python3
 import os
-import Alfred
+
+import Alfred3 as Alfred
+
 
 def get_assigned_app(ext):
     resp = os.popen("/usr/local/bin/duti -x " + ext).read().splitlines()
     return resp
 
+
 def duti_avail():
     return os.path.isfile('/usr/local/bin/duti')
+
 
 ext = Alfred.Tools.getArgv(1)
 if not ext.startswith('.'):
@@ -22,27 +26,27 @@ if not assigned_app and duti_avail():
         subtitle="Continue?",
         arg=ext
     )
-    wf.setIcon('proceed.png','icon')
+    wf.setIcon('proceed.png', 'icon')
     wf.addItem()
     wf.setItem(
         title='Don\'t Continue?',
         arg='QUIT'
     )
-    wf.setIcon('stop.png','icon')
+    wf.setIcon('stop.png', 'icon')
     wf.addItem()
 elif duti_avail():
     wf.setItem(
-        title='\"%s\" is assigned to \"%s\"' % (ext,assigned_app[0]),
+        title='\"%s\" is assigned to \"%s\"' % (ext, assigned_app[0]),
         subtitle='Continue?',
         arg=ext
     )
-    wf.setIcon('proceed.png','icon')
+    wf.setIcon('proceed.png', 'icon')
     wf.addItem()
     wf.setItem(
         title='Don\'t Continue?',
         arg='QUIT'
     )
-    wf.setIcon('stop.png','icon')
+    wf.setIcon('stop.png', 'icon')
     wf.addItem()
 else:
     wf.setItem(

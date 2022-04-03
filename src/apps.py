@@ -1,23 +1,24 @@
-#!/usr/bin/python
+#!/usr/bin/en python3
 
 import os
-import Alfred
 import sys
+
+import Alfred3 as Alfred
 
 
 def app_list(q):
     """ Generates as sorted list of App Names in /Applications folder
-    
+
     Arguments:
         q {string} -- Search String
-    
+
     Returns:
         list -- Sorted list of App Names in /Applications
     """
     file_list = os.listdir('/Applications')
     sorted_file_list = sorted([os.path.splitext(a)[0] for a in file_list if a.endswith('.app')])
     if q != str():
-        sorted_file_list = [n for n in sorted_file_list if n.lower().startswith(q.lower())] 
+        sorted_file_list = [n for n in sorted_file_list if n.lower().startswith(q.lower())]
     return sorted_file_list
 
 
@@ -29,12 +30,12 @@ for app in app_list(query):
         subtitle="Continue to assign %s?" % app,
         arg=app
     )
-    wf.setIcon('/Applications/' + app + '.app','fileicon')
+    wf.setIcon('/Applications/' + app + '.app', 'fileicon')
     wf.addItem()
 if not app_list(query):
     wf.setItem(
         title="Nothing Found!",
-        subtitle='No App found beginning with: "%s"' %query,
+        subtitle='No App found beginning with: "%s"' % query,
         valid=False
     )
     wf.addItem()

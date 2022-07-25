@@ -6,6 +6,16 @@ import sys
 from Alfred3 import Tools
 
 
+def get_duti_path() -> str:
+    paths = ["/usr/local/bin/duti", "/opt/homebrew/bin/duti"]
+    duti_path = None
+    for p in paths:
+        if os.path.isfile(p):
+            duti_path = p
+            break
+    return duti_path
+
+
 def get_appid(app):
     cmd = "osascript -e 'id of app \"" + app + "\"'"
     resp = os.popen(cmd).read().splitlines()
@@ -14,7 +24,8 @@ def get_appid(app):
 
 
 def duti(appid, ext):
-    resp = os.system("/usr/local/bin/duti -s " + appid + " " + ext + " all")
+    d_path = get_duti_path()
+    resp = os.system(f"{d_path} -s " + appid + " " + ext + " all")
     return True if resp == 0 else False
 
 

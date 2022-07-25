@@ -5,12 +5,19 @@ import Alfred3 as Alfred
 
 
 def get_assigned_app(ext):
-    resp = os.popen("/usr/local/bin/duti -x " + ext).read().splitlines()
+    d_path = get_duti_path()
+    resp = os.popen(f"{d_path} -x " + ext).read().splitlines()
     return resp
 
 
-def duti_avail():
-    return os.path.isfile('/usr/local/bin/duti')
+def get_duti_path() -> str:
+    paths = ["/usr/local/bin/duti", "/opt/homebrew/bin/duti"]
+    duti_path = None
+    for p in paths:
+        if os.path.isfile(p):
+            duti_path = p
+            break
+    return duti_path
 
 
 ext = Alfred.Tools.getArgv(1)
@@ -20,7 +27,8 @@ if not ext.startswith('.'):
 
 assigned_app = get_assigned_app(ext)
 wf = Alfred.Items()
-if not assigned_app and duti_avail():
+duti_path = get_duti_path()
+if not assigned_app and duti_path:
     wf.setItem(
         title='%s is not assigned to an App' % ext,
         subtitle="Continue?",
@@ -34,7 +42,7 @@ if not assigned_app and duti_avail():
     )
     wf.setIcon('stop.png', 'icon')
     wf.addItem()
-elif duti_avail():
+elif duti_path:
     wf.setItem(
         title='\"%s\" is assigned to \"%s\"' % (ext, assigned_app[0]),
         subtitle='Continue?',

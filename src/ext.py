@@ -30,7 +30,7 @@ wf = Alfred.Items()
 duti_path = get_duti_path()
 if not assigned_app and duti_path:
     wf.setItem(
-        title='%s is not assigned to an App' % ext,
+        title=f'{ext} is not assigned to an App',
         subtitle="Continue?",
         arg=ext
     )
@@ -44,7 +44,7 @@ if not assigned_app and duti_path:
     wf.addItem()
 elif duti_path:
     wf.setItem(
-        title='\"%s\" is assigned to \"%s\"' % (ext, assigned_app[0]),
+        title=f'\"{ext}\" is assigned to \"{assigned_app[0]}\"',
         subtitle='Continue?',
         arg=ext
     )

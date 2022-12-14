@@ -24,7 +24,6 @@ ext = Alfred.Tools.getArgv(1)
 if not ext.startswith('.'):
     ext = '.' + ext
 
-
 assigned_app = get_assigned_app(ext)
 wf = Alfred.Items()
 duti_path = get_duti_path()

@@ -6,6 +6,7 @@ import sys
 import Alfred3 as Alfred
 
 APP_FOLDER = "/Applications"
+SYSTEM_APP_FOLDER = "/System/Applications"
 
 
 def get_app_icon(app):
@@ -23,8 +24,11 @@ def get_app_icon(app):
 
     """
     app_file = os.path.join(APP_FOLDER, f"{app}.app")
+    sys_app_file = os.path.join(SYSTEM_APP_FOLDER, f"{app}.app")
     if os.path.exists(app_file):
         return app_file
+    if os.path.exists(sys_app_file):
+        return sys_app_file
     else:
         for root, dirs, files in os.walk(APP_FOLDER):
             for dir in dirs:
@@ -45,10 +49,11 @@ def app_list(q):
         list -- Sorted list of App Names in /Applications
     """
     file_list = os.listdir(APP_FOLDER)
+    file_list.extend(os.listdir(SYSTEM_APP_FOLDER))
 
     for i in file_list:
         p = os.path.join(APP_FOLDER, i)
-        if not(p.endswith(".app")) and os.path.isdir(p):
+        if not (p.endswith(".app")) and os.path.isdir(p):
             deep_apps = os.listdir(os.path.join(APP_FOLDER, p))
             for da in deep_apps:
                 if da.endswith('.app'):

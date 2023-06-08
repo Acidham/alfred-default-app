@@ -161,7 +161,7 @@
 				<key>runningsubtext</key>
 				<string></string>
 				<key>script</key>
-				<string>./py3.sh ext.py "$1"</string>
+				<string>python3 ext.py "$1"</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -190,7 +190,7 @@
 				<key>escaping</key>
 				<integer>68</integer>
 				<key>script</key>
-				<string>./py3.sh change.py "$1"</string>
+				<string>python3 change.py "$1"</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -252,7 +252,7 @@
 				<key>runningsubtext</key>
 				<string></string>
 				<key>script</key>
-				<string>./py3.sh apps.py "$1"</string>
+				<string>python3 apps.py "$1"</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -486,7 +486,7 @@ Requires Python 3
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>1.4.1</string>
+	<string>1.4.2</string>
 	<key>webaddress</key>
 	<string>https://github.com/Acidham/alfred-default-app</string>
 </dict>

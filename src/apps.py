@@ -67,7 +67,8 @@ def app_list(q):
 
 query = Alfred.Tools.getArgv(1)
 wf = Alfred.Items()
-for app in app_list(query):
+apps = app_list(query)
+for app in apps:
     ax = get_app_icon(app)
     wf.setItem(
         title=app,

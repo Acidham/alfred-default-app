@@ -39,6 +39,6 @@ else:
     resp = False
 
 if resp:
-    sys.stdout.write("%s succesfully assigned to %s" % (ext, app))
+    sys.stdout.write(f"{ext} succesfully assigned to {app}")
 else:
-    sys.stdout.write("Unabled to assign %s to %s" % (ext, app))
+    sys.stdout.write(f"Unabled to assign {ext} to {app}")
